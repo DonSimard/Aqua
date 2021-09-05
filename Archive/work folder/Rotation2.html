@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+ <script src="jquery-1.10.2.min.js" type="text/javascript"></script>  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.core.min.js"></script> 
+ <script src="/scripts/Export to Table/ExportToTable.js"></script>
+
+
+ <style>
+   .pdfobject-container { height: 500px;}
+   .pdfobject { border: 1px solid #666; }
+ </style>
+<body>
+
+    <input type="file" id="excelfile" />  
+    <input type="button" id="viewfile" value="Export To Table" onclick="ExportToTable()" />  
+       <br />  
+       <br />  
+    <table id="exceltable">  
+    </table>
+</body>
+</html>

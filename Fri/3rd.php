@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<Title>Aquarium Shift Rotation</Title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Don Simard simard57@hotmail.com CC0260">
+<link rel="shortcut icon" type="image/x-icon" href="NA Logo.jpg">
+
+<!-- sorttable.js is borrowed from https://kryogenix.org/code/browser/sorttable/ -->
+<link rel="stylesheet" href="/css/LHVC.css">
+<link rel="stylesheet" href="/css/navbar.css">
+
+<?php
+    $Day = array("Mon"=>"Monday",
+    "Tues"=>"Tuesday",
+    "Wed"=>"Wednesday",
+    "Thurs"=>"Thursday",
+    "Fri"=>"Friday",
+    "Sat"=>"Saturday",
+    "Sun"=>"Sunday");
+
+    $path_pieces = explode ("/",$_SERVER["SCRIPT_NAME"]);
+    $thisDay = $path_pieces[count($path_pieces)-2];
+    $thisShift = basename($_SERVER["SCRIPT_NAME"],".php");
+    $thisDay = $Day[$thisDay];
+    $shiftDir = $thisShift."/Simple.php";
+?>
+<body style="background-color: lightblue;">
+    <h1>National Aquarium Shift Rotation</h1>
+    <h2><?php echo $thisDay. " ". $thisShift ?> Shift</h2>
+    <h3>Enter information Captain assigns</h2>
+    <form action=<?php echo '"'.$shiftDir.'"' ?> method="post">
+        <table style="table-layout: auto;">
+            <thead>
+            <tr> 
+                <td class="right"><strong></strong></td>
+                <td class="left"><strong></strong></td>
+            </thead>
+            <tbody>
+                <tr style="font-size: 2.5em" class="left">
+                    <td class="right"> # of Guides </td>
+                    <td> <select name="Guides" style="font-size: 1em">
+                            <option value="0">3</option>
+                            <option value="1">4</option>
+                            <option value="2">5</option>
+                            <option value="3">6</option>
+                            <option value="4">7</option>
+                            <option value="5">8</option>
+                            <option value="6">9</option>
+                            <option value="7">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr style="font-size: 2.5em" class="left">
+                    <td class="right"> Rotation </td>
+                    <td> <select name="Rotation" style="font-size: 1em">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="J">J</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+        <input type="submit" value="My Rotation"   name="One" style="width: 20em;  height: 2em;">
+        <br>
+        <input type="submit" Value="All Rotations" name="All" style="width: 20em;  height: 2em;">
+    </form>
+</body>
+</html>
