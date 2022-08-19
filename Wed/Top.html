@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<Title>Aquarium Shift Rotation</Title>
+<meta name="author" content="Don Simard simard57@hotmail.com CC0260">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="NA Logo.jpg">
+
+<!-- sorttable.js is borrowed from https://kryogenix.org/code/browser/sorttable/ -->
+<link rel="stylesheet" href="/css/sorttable.css">
+<link rel="stylesheet" href="/css/LHVC.css">
+<link rel="stylesheet" href="/css/navbar.css">
+
+<body style="background-color: lightblue;">
+    <h1>National Aquarium Shift Rotation</h1>
+    <h2>Click shift to view App</h2>
+    <table style="table-layout: auto; font-size:200%;">
+            <thead>
+            <tr> 
+                <th>Day</th>
+                <th colspan="3">Shift</th>
+            </thead>
+            <tbody>
+                <tr class="right">
+                    <td> Sunday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Sun&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Sun&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Sun&Shift=3rd">3rd</a> </td>
+                </tr>          
+                <tr class="right">
+                    <td> Monday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Mon&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Mon&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Mon&Shift=3rd">3rd</a> </td>
+                </tr>          
+                <tr class="right"> 
+                    <td> Tuesday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Tues&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Tues&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Tues&Shift=3rd">3rd</a> </td>
+                </tr>          
+                <tr class="right">
+                    <td> Wednesday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Wed&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Wed&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Wed&Shift=3rd">3rd</a> </td>
+                </tr>          
+                <tr class="right">
+                    <td> Thursday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Thurs&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Thurs&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Test&Shift=3rd">3rd</a> </td>
+                </tr>          
+                <tr class="right">
+                    <td> Friday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Fri&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Fri&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Fri&Shift=3rd">3rd</a> </td>
+                </tr>          
+                <tr class="right">
+                    <td> Saturday </tD>
+                    <td class="left"> <a href="SelectRotation.php?Day=Sat&Shift=1st">1st</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Sat&Shift=2nd">2nd</a> </td>
+                    <td class="left"> <a href="SelectRotation.php?Day=Sat&Shift=3rd">3rd</a> </td>
+                </tr>          
+            </tbody>
+    </table>
+    <details>
+        <summary> Feedback and Requests </summary>
+        I hope you find this App useful.
+        <br>If you wish to customize the rotation, or have a request for a new feature, or find something not working quite right, 
+        or to just to let me know you are using it, leave feedback in form below or email to <em>simard57@hotmail.com</em>.
+
+        <br>The rotation schedule is generated from a spreadsheet. To change the rotation:
+        <ol>
+            <li>Download the Schedule.csv for the Day and Shift from <a href="https://1drv.ms/u/s!Aq7WzrJLqSI_wdg48wsBUrsWyfvEGA?e=0oQMNn" target="_blank">Rotation Schedules</a> that you want to change</li>
+            <li>Edit the Schedule.csv file using any Spreadsheet program you have</li>
+            <li><em>VERY IMPORTANT!</em> Save the Schedule.csv file as a <em>.csv</em>! The online Excel & Google Sheets save in their native formats.</li>
+            <li>Upload the updated Schedule.csv in the appropriate Day and Shift at <a href="https://1drv.ms/u/s!Aq7WzrJLqSI_wdsH0c1b7dEfVXy87w?e=RD4UzO" target="_blank">Updated Rotation Schedules</a> </li>
+            <li>When I notice the file upload, I will update the website with your new rotation. You can ping me using email (<em>simard57@hotmail.com</em>) for quicker response.</li>
+        </ol>
+        <form action="/Log/LogFeedback.php?Log=Aqua_Logs/RotationAppFeedback.csv" method="GET">
+            <table>
+                <tr>
+                    <td> Email Address</td>
+                    <td><input type="email" id="From" name="From" value="" size="10"></td>
+                </tr>
+                <tr>
+                    <td class="right"> Feedback </td>
+                    <td> <textarea rows="4" cols="32" id="Feedback" name="Feedback"></textarea> <br>
+<!--                        <input type="hidden" name="Log" value="Aqua_Logs/RotationAppFeedback.csv" >
+-->
+                        <input type="submit" value="Comments"> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </details>
+</body>
+</html>

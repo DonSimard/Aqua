@@ -1,0 +1,46 @@
+table {
+    height: auto;
+    max-width: 100%;
+    font-size: 16px;
+    border-collapse: collapse;
+    border: 5px solid darkblue; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: #104E8B;
+    background-image:none;
+    top: 0;        
+    color: white;
+    font-weight: bold;
+    border: 3px solid darkblue; 
+
+}
+
+td {
+    vertical-align: top;
+    padding-right: 5px;
+    border: 3px solid darkslateblue; 
+}
+
+.cent {
+    text-align:center;
+}
+
+.left {
+    text-align:left;
+}
+
+.right {
+    text-align:right;
+}
+
+tr:target td {
+
+    padding-top: 14em !important 
+/*
+    padding-top: 2.8em !important 
+*/
+    border: 3px solid #CCC; 
+
+

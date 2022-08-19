@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<Title>Aquarium Shift Rotation</Title>
+<meta name="author" content="Don Simard simard57@hotmail.com CC0260">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="/images/NA Logo.jpg">
+<link rel="stylesheet" href="Aqua.css">
+<link rel="stylesheet" href="/css/navbar.css">
+<!--
+<style> 
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
+-->
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+<body style="background-color: lightblue;">
+    <h1>Tank Capacities</h1>
+    <table style="table-layout: auto; font-size:200%;">
+        <thead>
+        <tr> 
+            <th>Tank</th>
+            <th>Capacity<br>(Gallons)</th>
+            <th>Depth</th>
+        </thead>
+        <tbody>
+            <tr> <td colspan="3"> Pier 3 </td> </tr>
+            <tr> <td align="right"> Blacktip Reef       </td> <td class="right"> 260,000 </td> </tr>
+            <tr> <td align="right"> Atlantic Coral Reef </td> <td class="right"> 330,000 </td> </tr>
+            <tr> <td align="right"> Shark Alley         </td> <td class="right"> 225,000 </td> </tr>          
+            <tr> <td colspan="3"> Pier 4 </td> </tr>
+            <tr> <td align="right"> Main Exhibition Pool</td> <td class="right"> 727,850 </td> </tr>
+            <tr> <td align="right"> Back Resting Pool #1</td> <td class="right"> 226,900 </td> </tr>
+            <tr> <td align="right"> Back Resting Pool #2</td> <td class="right"> 123,500 </td> </tr>          
+            <tr> <td align="right"> Two Reservoirs      </td> <td class="right"> 136,800 <br> 136,000 </td> </tr>          
+            <tr> <td align="right"> Medical Pool        </td> <td class="right">  14,000 </td> </tr>          
+            <tr> <td align="right"> Three Backwash Recovery Basins </td> <td class="right"> 21,000 </td> </tr>          
+            <tr> <td align="right"> Isolation Tank      </td> <td class="right"> 92,650 </td> </tr>          
+        </tbody>
+    </body>
+    </html>
