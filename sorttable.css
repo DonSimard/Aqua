@@ -1,0 +1,41 @@
+/*
+    sorttable.js is borrowed from https://kryogenix.org/code/browser/sorttable/
+    <script src="/scripts/sorttable.js"> </script>
+*/
+
+table.sortable  {
+    height: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    color:black;
+    border:5px solid blue;
+}
+
+.sortable tr:hover {
+    background-color:#f5f5f5;
+}
+
+.sortable thead {
+    top: 0;
+}
+
+.sortable th {
+    top: 0;
+    position: sticky;
+    font-weight: bold;    
+    background-color: blue;
+    border:3px solid white;
+    color: white;
+}
+
+.sortable tbody {
+    top: 10%;
+}
+
+.sortable td {
+    padding: 1px;
+    vertical-align: top;
+    border: 3px solid blue; 
+}
+
